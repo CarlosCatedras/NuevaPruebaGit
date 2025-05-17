@@ -22,10 +22,17 @@ namespace NuevaPruebaGit.Datos
                 new Producto { Id = 10, Nombre = "Impresora HP LaserJet Pro M15w", Precio = 119.00m, Stock = 9 }
             };
         }
+
+        public void Agregar(Producto producto)
+        {
+            productos.Add(producto);
+        }
+
         public List<Producto> GetLista()
         {
             return productos;
         }
+
 
 
 
