@@ -4,11 +4,11 @@ namespace NuevaPruebaGit.Datos
 {
     public class RepositorioProductos
     {
-        private  List<Producto> _productos;
+        private  List<Producto> productos;
 
         public RepositorioProductos()
         {
-            _productos = new List<Producto>()
+            productos = new List<Producto>()
             {
                 new Producto { Id = 1, Nombre = "Laptop Dell XPS 15", Precio = 1599.99m, Stock = 5 },
                 new Producto { Id = 2, Nombre = "Monitor LG 27UL850", Precio = 449.00m, Stock = 10 },
@@ -22,7 +22,10 @@ namespace NuevaPruebaGit.Datos
                 new Producto { Id = 10, Nombre = "Impresora HP LaserJet Pro M15w", Precio = 119.00m, Stock = 9 }
             };
         }
-
+        public void Agregar(Producto producto)
+        {
+            productos.Add(producto);
+        }
 
     }
 }
