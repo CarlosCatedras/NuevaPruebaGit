@@ -1,4 +1,5 @@
 ﻿using NuevaPruebaGit.Datos;
+using NuevaPruebaGit.Entidades;
 
 namespace NuevaPruebaGit.Servicios
 {
@@ -9,5 +10,10 @@ namespace NuevaPruebaGit.Servicios
         {
             repositorioProductos = new RepositorioProductos();
         }
+        public List<Producto> GetLista()
+        {
+            return repositorioProductos!.GetLista();
+        }
+
     }
 }
