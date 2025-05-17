@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("--- Menú Principal ---");
+            Console.WriteLine("*--- Menú Principal ---*");
             Console.WriteLine("1. Crear Registro");
             Console.WriteLine("2. Leer Registros");
             Console.WriteLine("3. Actualizar Registro");
